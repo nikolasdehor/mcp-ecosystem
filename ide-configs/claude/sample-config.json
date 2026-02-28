@@ -17,6 +17,6 @@
   "notes": {
     "description": "Sample Claude Code configuration for AIOS projects",
     "preset": "aios-dev",
-    "documentation": "https://github.com/allfluence/mcp-ecosystem"
+    "documentation": "https://github.com/SynkraAI/mcp-ecosystem"
   }
 }

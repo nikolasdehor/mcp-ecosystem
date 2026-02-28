@@ -80,11 +80,11 @@ AI-powered web search and content extraction.
 
 ## Documentation
 
-For detailed documentation, visit [AIOS Core Discussions](https://github.com/allfluence/aios-core/discussions).
+For detailed documentation, visit [AIOS Core Discussions](https://github.com/SynkraAI/aios-core/discussions).
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](https://github.com/allfluence/aios-core/blob/main/CONTRIBUTING.md).
+We welcome contributions! Please see our [Contributing Guide](https://github.com/SynkraAI/aios-core/blob/main/CONTRIBUTING.md).
 
 ## License
 
@@ -92,4 +92,4 @@ Apache 2.0 License - see [LICENSE](./LICENSE)
 
 ---
 
-Part of the [AIOS Framework](https://github.com/allfluence/aios-core)
+Part of the [AIOS Framework](https://github.com/SynkraAI/aios-core)
