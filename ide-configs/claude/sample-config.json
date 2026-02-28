@@ -12,11 +12,18 @@
     "playwright": {
       "command": "npx",
       "args": ["-y", "@anthropic/playwright-mcp"]
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "${EXA_API_KEY}"
+      }
     }
   },
   "notes": {
     "description": "Sample Claude Code configuration for AIOS projects",
-    "preset": "aios-dev",
-    "documentation": "https://github.com/allfluence/mcp-ecosystem"
+    "preset": "aios-full",
+    "documentation": "https://github.com/SynkraAI/mcp-ecosystem"
   }
 }
