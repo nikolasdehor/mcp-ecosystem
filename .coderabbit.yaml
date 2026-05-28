@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "pt-BR"
+tone_instructions: "Seja profissional, construtivo e foque em qualidade de código. Escreva em português."
+early_access: false
+
+reviews:
+  auto_review:
+    enabled: true
+    base_branches: [main, master]
+    drafts: false
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+
+  path_instructions:
+    - path: "**/*.json"
+      instructions: |
+        Validar JSON: sem trailing commas, chaves entre aspas.
+        Configs MCP: verificar `mcpServers`, `command`, `args` estão bem formados.
+        Sem secrets/API keys em valores literais — usar env vars.
+    - path: "**/Dockerfile*"
+      instructions: |
+        Multi-stage quando aplicável. Imagens base com tag pinned (sem :latest).
+        Sem segredos no build; usar build args ou secrets do Docker.
+        USER não-root quando possível.
+    - path: "**/*.yml"
+      instructions: |
+        YAML: validar indentação. Sem secrets hardcoded.
+        docker-compose: versão fixa, volumes mapeados conscientemente.
+    - path: ".github/**"
+      instructions: Segurança, secrets, sintaxe.
+
+chat:
+  auto_reply: true
